@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+80s+Fade&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    background: black;
+    list-style: none;
+}
+
+header {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+    nav {
+        width: 60%;
+    }
+
+    ul {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    li {
+        list-style: none;
+        color: white;
+        cursor: pointer;
+        font-size: 19px;
+        transition: .3s;
+        font-family: 'Rubik 80s Fade', cursive;
+    }
+
+    li:hover {
+        color: red;
+    }
+
+
+.movie-cards-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    width: 100%;
+}
+    .movie{
+        height: 500px;
+        width: 90%;
+        margin-top: 20px;
+        background-size: cover;
+    }
+            .cards-1{background-image: url(https://cinemacao.com/wp-content/uploads/2022/03/batman-2-1130x590.jpg);}
+            .cards-2{background-image: url(https://universoheroico.com.br/wp-content/uploads/2022/01/Imagem-do-filme-The-Batman-com-Robert-Pattinson.jpg);}
+            .cards-3{background-image: url(https://epipoca.com.br/wp-content/uploads/2022/03/cena-de-batman2-06032022.jpg);}
+
+
+p{
+    color: white;
+    font-size: larger;   
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.actor-cards-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+    .cards-content{
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 20px;
+        column-gap: 40px;
+    }
+
+        .card{
+            width: 100%;
+            height: 600px;
+            background-size: cover;
+            background-position: 50% 50%;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: 1s;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 0 0 20px 10px;
+            color: white;
+            font-weight: bold;
+            font-size: 17px;
+
+        }
+
+        .card:hover{
+            transform: scale(1.04);
+        }
+            .banner-1{background-image: url(https://images7.alphacoders.com/107/1071094.jpg);}
+            .banner-2{background-image: url(https://images7.alphacoders.com/120/1200686.jpg);}
+            .banner-3{background-image: url(https://scontent-gig2-1.xx.fbcdn.net/v/t1.6435-9/120887530_356141422485286_3353336633780108046_n.jpg?stp=dst-jpg_s640x640&_nc_cat=111&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeFnoFopVtNS6YE7_dNFImVmb9T5NPj3cchv1Pk0-PdxyIyPoxKdyb2abu1Lj8BtPBfPBpc9BjEjcODAMGjpsC0y&_nc_ohc=L-YDaPV7zDUAX-qN9-m&_nc_ht=scontent-gig2-1.xx&oh=00_AfBGTIuMU1Glk70RxSkRvJ8S_3aKrVzM9J31AIDr1W2iAA&oe=63CBCC44);}
+            .banner-4{background-image: url(https://limaomecanico.com.br/wp-content/uploads/2019/02/paul-dano.jpg);}
+            .banner-5{background-image: url(https://cosmonerd.com.br//uploads/2021/07/the-batman-capa-cosmo-2.jpg);}
+            .banner-6{background-image: url(https://uploads.jovemnerd.com.br/wp-content/uploads/2022/11/alfred_batman_capa_1__1v07je-1210x544.jpg);}
+            
+
+
+
+
+footer {
+    width: 100%;
+    height: 200px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+    span{
+        color: white;
+    }
+
+    .footer-navegation{
+        display: none;
+    }
+    
+    .footer-list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+@media (max-width: 768px) {
+    .footer-navegation{
+        display: block;
+    }
+
+    nav{
+        display: none;
+    }
+
+    .cards-content{
+        grid-template-columns: 1fr;
+        margin-top: 10px;
+    }
+
+
+    .movie{
+        background-position: 50% 50%;
+    }
+}

@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+80s+Fade&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    background: black;
+    list-style: none;
+}
+
+header {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+    nav {
+        width: 60%;
+    }
+
+    ul {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    li {
+        list-style: none;
+        color: white;
+        cursor: pointer;
+        font-size: 19px;
+        transition: .3s;
+        font-family: 'Rubik 80s Fade', cursive;
+    }
+
+    li:hover {
+        color: red;
+    }
+
+.Banner {
+        width: 100%;
+        height: 600px;
+        background-image: url('https://cdn.europosters.eu/image/hp/66923.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+    }
+
+
+#trailer-content {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+    .content {
+        width: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+        .Trailer {
+            width:60%;
+        }
+
+
+    #Sinopse {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 30px;
+    }
+
+        .description {
+            color: white;
+            font-size: 19px;
+            width: 50%;
+        }
+
+        .Buy {
+            width: 200px;
+            height: 60px;
+            background: red;
+            color: white;
+            padding: 8px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: .9s;
+            font-size: 18px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            border: none;
+            outline: none;
+            margin-top: 35px;
+        }
+
+        .Buy:hover {
+            background: white;
+            color: black;
+        }
+
+    .actor-cards-container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+    }
+
+        .cards-content{
+            width: 90%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            row-gap: 20px;
+            column-gap: 40px;
+        }
+
+            .card{
+                width: 100%;
+                height: 600px;
+                background-size: cover;
+                background-position: 50% 50%;
+                cursor: pointer;
+                border-radius: 5px;
+                transition: 1s;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                padding: 0 0 20px 10px;
+                color: white;
+                font-weight: bold;
+                font-size: 17px;
+
+            }
+
+            .card:hover{
+                transform: scale(1.04);
+            }
+                .banner-1{background-image: url(https://images7.alphacoders.com/107/1071094.jpg);}
+                .banner-2{background-image: url(https://images7.alphacoders.com/120/1200686.jpg);}
+                .banner-3{background-image: url(https://scontent-gig2-1.xx.fbcdn.net/v/t1.6435-9/120887530_356141422485286_3353336633780108046_n.jpg?stp=dst-jpg_s640x640&_nc_cat=111&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeFnoFopVtNS6YE7_dNFImVmb9T5NPj3cchv1Pk0-PdxyIyPoxKdyb2abu1Lj8BtPBfPBpc9BjEjcODAMGjpsC0y&_nc_ohc=L-YDaPV7zDUAX-qN9-m&_nc_ht=scontent-gig2-1.xx&oh=00_AfBGTIuMU1Glk70RxSkRvJ8S_3aKrVzM9J31AIDr1W2iAA&oe=63CBCC44);}
+                
+
+
+
+footer {
+    width: 100%;
+    height: 200px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+    span{
+        color: white;
+    }
+
+    .footer-navegation{
+        display: none;
+    }
+    
+    .footer-list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+@media (max-width: 768px) {
+    .footer-navegation{
+        display: block;
+    }
+
+    nav{
+        display: none;
+    }
+
+    .Banner{
+        background-position: 40%;
+    }
+    #trailer-content{
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+    }
+    .content{
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Trailer{
+        width: 100%;
+    }
+
+    #Sinopse{
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .description{
+        width: 100%;
+    }
+
+    .Buy{
+        width: 100%;
+        margin-top: 30px;
+    }
+    
+    .cards-content{
+        grid-template-columns: 1fr;
+        margin-top: 30px;
+    }
+
+
+}

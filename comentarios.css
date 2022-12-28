@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+80s+Fade&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    background: black;
+    list-style: none;
+}
+
+header {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+    nav {
+        width: 60%;
+    }
+
+    ul {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    li {
+        list-style: none;
+        color: white;
+        cursor: pointer;
+        font-size: 19px;
+        transition: .3s;
+        font-family: 'Rubik 80s Fade', cursive;
+    }
+
+    li:hover {
+        color: red;
+    }
+
+
+.center{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+p{
+    color: white;
+    margin-top: 50px;
+    margin-left: 50px;
+    font-size: large;
+}
+
+
+form{
+    color: white;
+    height: 300px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 50px;
+    margin-top: 50px;
+
+}
+
+    button{
+        width: 150px;
+        color: white;
+    }
+
+    input{
+        color: white;
+    }
+
+    textarea{
+        color: white;
+    }
+
+.coment{
+    color: white;
+    border: 1px solid white;
+    width: 76%;
+    margin-top: 30px;
+    margin-left: 50px;
+    padding: 20px;
+}
+
+footer {
+    width: 100%;
+    height: 200px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+    span{
+        color: white;
+    }
+
+    .footer-navegation{
+        display: none;
+    }
+    
+    .footer-list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+@media (max-width: 768px) {
+    .footer-navegation{
+        display: block;
+    }
+
+    nav{
+        display: none;
+    }
+
+    form{
+        width: 100%;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    input{
+        height: 20px;
+    }
+
+    .center{
+        align-items: center;
+    }
+    
+    p{
+    margin-top: 50px;
+    margin-left: 0;
+    }
+}
